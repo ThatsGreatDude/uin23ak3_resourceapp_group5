@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --blue: #2A324B;
+    --lightblue: #58699D; 
+    --lightgrey: #E1E5EE;
+    --white: #fff;
+
+    --font: 'Roboto';
+}
+
+body {
+    background-color: var(--lightgrey);
+    font-family: var(--font);
+}
+
+#container {
+    width: 1050px;
+    margin: 120px auto;
+    min-height: 350px;
+    background-color: var(--white);
+} /*spurte chat gpt om hvordan jeg tok containeren nedover*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 300px;
+} /*idk*/
+
+nav {
+    background-color: var(--lightgrey);
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    margin: 0; /* Remove default margin */
+    padding: 0 0px; /* Add padding to space out items */
+    width: calc(100% + 30px); /* Calculate width to include padding */
+    margin-left: -30px; /* Adjust margin to move the list to the left */
+}
+
+
+
+nav li {
+    display: inline-block; /* Display li elements as inline-block to make them behave like buttons */
+    margin-left: 10px; /* Adjust margin to create separation between buttons */
+}
+
+nav a {
+    display: inline-block; /* Change display to inline-block */
+    padding: 0 2.5rem;
+    color: var(--white);
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: var(--blue);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 70px;
+    height: 70px;
+    text-align: center;
+    white-space: nowrap;
+    margin-right: auto; /* Move links to the left */
+    margin-left: 20px; /* Add space between links on the right */
+}
+
+
+nav a.selected {
+    color: var(--blue); 
+    background-color: var(--white); 
+}
+
+nav a:hover {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+#category-info-container {
+    position: relative;
+    top: 0%; 
+    left: 0px;
+    width: 1050px;
+    background-color: var(--white); 
+}
+
+#category-info {
+    width: 850px; 
+    padding: 10px; 
+}
+
