@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
     const categoryLinks = document.querySelectorAll("nav a");
 
+    displayCategoryInfo(categoryLinks[0].getAttribute("href").substring(1))
+    categoryLinks[0].classList.add('selected');
+
     categoryLinks.forEach(link => {
         link.addEventListener("click", function(event) {
             event.preventDefault();
