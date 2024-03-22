@@ -26,7 +26,7 @@ header {
     justify-content: space-between;
     position: absolute;
     top: 300px;
-} /*idk*/
+} 
 
 nav {
     background-color: var(--lightgrey);
@@ -36,22 +36,22 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-between; /* Distribute items evenly */
-    margin: 0; /* Remove default margin */
-    padding: 0 0px; /* Add padding to space out items */
-    width: calc(100% + 30px); /* Calculate width to include padding */
-    margin-left: -30px; /* Adjust margin to move the list to the left */
+    justify-content: space-between;
+    margin: 0; 
+    padding: 0 0px; 
+    width: calc(100% + 30px); 
+    margin-left: -30px; 
 }
 
 
 
 nav li {
-    display: inline-block; /* Display li elements as inline-block to make them behave like buttons */
-    margin-left: 10px; /* Adjust margin to create separation between buttons */
+    display: inline-block; 
+    margin-left: 10px; 
 }
 
 nav a {
-    display: inline-block; /* Change display to inline-block */
+    display: inline-block; 
     padding: 0 2.5rem;
     color: var(--white);
     text-decoration: none;
@@ -63,8 +63,8 @@ nav a {
     height: 70px;
     text-align: center;
     white-space: nowrap;
-    margin-right: auto; /* Move links to the left */
-    margin-left: 20px; /* Add space between links on the right */
+    margin-right: auto; 
+    margin-left: 20px; 
 }
 
 
